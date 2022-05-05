@@ -1,3 +1,5 @@
+package com.company;
+
 public class ConverterSwitch implements Converter {
 
     public ConverterSwitch() {

@@ -1,28 +1,26 @@
 package com.company;
 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class CustomerTest {
 
-    @org.junit.jupiter.api.Test
-    void getFirstName() {
-    }
+    Customer Dan = new Customer(
+            "Dan",
+            "Mueller",
+            "PoisonFan299@gmail.com",
+            null,
+           null,
+            null,
+            false
+            );
 
-    @org.junit.jupiter.api.Test
-    void setFirstName() {
-    }
+    @Test
+    public void isDanALoyalCustomer(){
+        boolean expected = false;
+        boolean actual = Dan.isRewardsMember();
+        assertEquals(expected, actual);
 
-    @org.junit.jupiter.api.Test
-    void getLastName() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void setLastName() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void getEmail() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void setEmail() {
     }
 }

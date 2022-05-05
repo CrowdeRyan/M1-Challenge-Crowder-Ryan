@@ -1,18 +1,16 @@
 package com.company;
 
-import com.sun.javafx.binding.StringFormatter;
-
 public class Customer {
 
     private String firstName;
     private String lastName;
     private String email;
-    private int phoneNumber;
-    private String billingAddress;
-    private String shippingAddress;
+    private long phoneNumber;
+    private Address billingAddress;
+    private Address shippingAddress;
     private boolean isRewardsMember;
 
-    public Customer(String firstName, String lastName, int phoneNumber, String billingAddress, String shippingAddress, boolean isRewardsMember){
+    public Customer(String firstName, String lastName, String email, Long phoneNumber, Address billingAddress, Address shippingAddress, boolean isRewardsMember){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -46,27 +44,27 @@ public class Customer {
         this.email = email;
     }
 
-    public int getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getBillingAddress() {
+    public Address getBillingAddress() {
         return billingAddress;
     }
 
-    public void setBillingAddress(String billingAddress) {
+    public void setBillingAddress(Address billingAddress) {
         this.billingAddress = billingAddress;
     }
 
-    public String getShippingAddress() {
+    public Address getShippingAddress() {
         return shippingAddress;
     }
 
-    public void setShippingAddress(String shippingAddress) {
+    public void setShippingAddress(Address shippingAddress) {
         this.shippingAddress = shippingAddress;
     }
 
