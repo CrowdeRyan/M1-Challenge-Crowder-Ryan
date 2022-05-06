@@ -2,11 +2,10 @@ package com.company;
 
 public class ConverterApplication {
     public static void main(String[] args) {
-        // Instantiate both ConverterIf and ConverterSwitch
+
         ConverterIf converterIf = new ConverterIf();
         ConverterSwitch converterSwitch = new ConverterSwitch();
 
-        // Show convertDay method is working for ConverterIf class
         System.out.println("ConverterIf Day Method");
         System.out.println("--------------------");
         System.out.println("ConverterIf Day 1: " + converterIf.convertDay(1));
@@ -20,7 +19,6 @@ public class ConverterApplication {
         System.out.println(" ");
         System.out.println(" ");
 
-        // Show convertMonth method is working for ConverterIf class
         System.out.println("ConverterIf Month Method");
         System.out.println("----------------------");
         System.out.println("ConverterIf Month 01: " + converterIf.convertMonth(1));
@@ -39,7 +37,6 @@ public class ConverterApplication {
         System.out.println(" ");
         System.out.println(" ");
 
-        // Show convertDay method is working for ConverterSwitch class
         System.out.println("ConverterSwitch Day Method");
         System.out.println("------------------------");
         System.out.println("ConverterSwitch Day 1: " + converterSwitch.convertDay(1));
@@ -53,7 +50,6 @@ public class ConverterApplication {
         System.out.println(" ");
         System.out.println(" ");
 
-        // Show convertMonth method is working for ConverterIf class
         System.out.println("ConverterSwitch Month Method");
         System.out.println("--------------------------");
         System.out.println("ConverterSwitch Month 01: " + converterSwitch.convertMonth(1));

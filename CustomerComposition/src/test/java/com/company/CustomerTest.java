@@ -10,14 +10,14 @@ class CustomerTest {
             "Dan",
             "Mueller",
             "PoisonFan299@gmail.com",
-            "5558675309",
+            5558675309L,
            null,
             null,
             false
             );
 
     @Test
-    public void isDanALoyalCustomer(){
+    public void isDanABadCustomer(){
         boolean expected = false;
         boolean actual = Dan.isRewardsMember();
         assertEquals(expected, actual);

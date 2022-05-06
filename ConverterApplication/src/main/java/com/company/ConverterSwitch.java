@@ -3,7 +3,6 @@ package com.company;
 public class ConverterSwitch implements Converter {
 
     public ConverterSwitch() {
-
     }
 
     public String convertMonth(int monthNum) {

@@ -5,12 +5,12 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
-    private String phoneNumber;
+    private long phoneNumber;
     private Address billingAddress;
     private Address shippingAddress;
     private boolean isRewardsMember;
 
-    public Customer(String firstName, String lastName, String email, String phoneNumber, Address billingAddress, Address shippingAddress, boolean isRewardsMember){
+    public Customer(String firstName, String lastName, String email, long phoneNumber, Address billingAddress, Address shippingAddress, boolean isRewardsMember){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -44,11 +44,11 @@ public class Customer {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
