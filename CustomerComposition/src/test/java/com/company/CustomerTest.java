@@ -10,7 +10,7 @@ class CustomerTest {
             "Dan",
             "Mueller",
             "PoisonFan299@gmail.com",
-            null,
+            "5558675309",
            null,
             null,
             false
